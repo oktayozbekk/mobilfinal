@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "646820899036",
+    "firebase_url": "https://oktay-6beab-default-rtdb.firebaseio.com",
+    "project_id": "oktay-6beab",
+    "storage_bucket": "oktay-6beab.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:646820899036:android:5bc2239698d6a516a9ac19",
+        "android_client_info": {
+          "package_name": "com.example.oktay"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "646820899036-e5fg1eis23rqpl96j0v0imq23hm70nvm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4VXoEMQQYVfSt61aFnW0mhB5GFogRIFg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "646820899036-e5fg1eis23rqpl96j0v0imq23hm70nvm.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "646820899036-kjc62gj2219977e0ee387r09khl7i0vu.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.oktay"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
