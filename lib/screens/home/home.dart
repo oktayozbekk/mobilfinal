@@ -21,7 +21,8 @@ class ClassRoomState extends State<ClassRoom> {
 
     return Scaffold(
         appBar: AppBar(
-          title: Text("Classroom"),
+          title: Text("Sınıf"),
+          
         ),
         body: Center(
             child: Column(
@@ -30,7 +31,7 @@ class ClassRoomState extends State<ClassRoom> {
               onPressed: () async {
                 await _auth.signOut();
               },
-              child: Text("Logout"),
+              child: Text("Çıkış Yap"),
             ),
             SizedBox(height: 12.0),
             Text("Email: ${user!.email}"),

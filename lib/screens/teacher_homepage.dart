@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:oktay/data/accounts.dart';
+import 'package:oktay/screens/Todo/todo.dart';
 import 'package:oktay/screens/teacher_classroom/add_class.dart';
 import 'package:oktay/screens/teacher_classroom/classes_tab.dart';
+import 'package:oktay/screens/APITest/ApiScreen.dart';
 import 'package:oktay/services/auth.dart';
 import 'package:oktay/data/custom_user.dart';
 import 'package:provider/provider.dart';
@@ -12,7 +14,6 @@ class TeacherHomePage extends StatefulWidget {
 }
 
 class _TeacherHomePageState extends State<TeacherHomePage> {
-
   @override
   Widget build(BuildContext context) {
     final AuthService _auth = AuthService();
@@ -29,11 +30,34 @@ class _TeacherHomePageState extends State<TeacherHomePage> {
         ),
         backgroundColor: Colors.white,
         actions: [
-          Padding(
-              padding: const EdgeInsets.symmetric(vertical: 20),
-              child: Text("Hoşgeldiniz, " + (account!.firstName as String),
-                style: TextStyle(color: Colors.black, fontSize: 16),
-              ),
+         
+          IconButton(
+            icon: Icon(
+              Icons.next_week_rounded,
+              color: Colors.black87,
+              size: 30,
+            ),
+            onPressed: () {
+              Navigator.of(context).push(MaterialPageRoute(
+                builder: (context) => ApiScreen(
+                 
+                ),
+              ));
+            },
+          ),
+          IconButton(
+            icon: Icon(
+              Icons.book,
+              color: Colors.black87,
+              size: 30,
+            ),
+            onPressed: () {
+              Navigator.of(context).push(MaterialPageRoute(
+                builder: (context) => TodoListScreen(
+                 
+                ),
+              ));
+            },
           ),
           IconButton(
             icon: Icon(
@@ -50,12 +74,13 @@ class _TeacherHomePageState extends State<TeacherHomePage> {
       body: ClassesTab(account),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          Navigator.of(context).push(
-              MaterialPageRoute(
+          Navigator.of(context)
+              .push(MaterialPageRoute(
                 builder: (context) => AddClass(),
-              )).then((_) => setState(() {}));
+              ))
+              .then((_) => setState(() {}));
         },
-        backgroundColor: Colors.blue,
+        backgroundColor: Colors.orange,
         child: Icon(
           Icons.add,
           color: Colors.white,

@@ -64,8 +64,8 @@ class _RegisterState extends State<Register> {
                 padding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 50.0),
                 child: Column(
                   children: [
-                    SizedBox(height: 20.0),
-
+                   
+Image.asset("Assets/Images/Saly.png",height: 250,),
                     // textbox for email
                     TextFormField(
                       decoration: InputDecoration(labelText: "Email", border: OutlineInputBorder()),

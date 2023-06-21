@@ -27,6 +27,7 @@ class _StudentHomePageState extends State<StudentHomePage> {
     final AuthService _auth = AuthService();
     final user = Provider.of<CustomUser?>(context);
     var account = getAccount(user!.uid);
+    
 
     final tabs = [
       WallTab(),
