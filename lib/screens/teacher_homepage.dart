@@ -3,7 +3,7 @@ import 'package:oktay/data/accounts.dart';
 import 'package:oktay/screens/Todo/todo.dart';
 import 'package:oktay/screens/teacher_classroom/add_class.dart';
 import 'package:oktay/screens/teacher_classroom/classes_tab.dart';
-import 'package:oktay/screens/APITest/ApiScreen.dart';
+import 'package:oktay/screens/ApiTestt/ApiScreen.dart';
 import 'package:oktay/services/auth.dart';
 import 'package:oktay/data/custom_user.dart';
 import 'package:provider/provider.dart';
